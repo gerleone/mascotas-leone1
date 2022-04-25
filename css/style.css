@@ -134,7 +134,7 @@ img{
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #304353, #E0DDAA );
+    background: linear-gradient(to right, #3d4d5a, #E0DDAA);
 }
 .main .mascotas .mascotaFeliz:hover{
     transform:scale(1.05);
@@ -145,7 +145,7 @@ img{
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    background: linear-gradient(to bottom, #304353, #E0DDAA );
+    background: linear-gradient(to left, #304353, #E0DDAA );
 }
 .main .mascotas .porquePaseo:hover{
     transform:scale(1.05);
