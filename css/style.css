@@ -100,7 +100,7 @@ img{
 
 .main .nosotros {
     background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
-    height: 20em;
+    height: 30em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,9 +108,6 @@ img{
     width: 100%;
     color: #ffffff;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .main .nosotros div a {
@@ -127,6 +124,7 @@ img{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 4em;
 }
 
 .main .mascotas .mascotaFeliz{
@@ -192,7 +190,7 @@ img{
 
 /*--------Main perro y gato-------*/
 
-.main .perroGato {
+.perroGato {
     display: flex;
     flex-wrap: wrap;
     background-color: #304353;
@@ -200,6 +198,7 @@ img{
     font-family: "mali";
     padding: 0.5em;
     text-align: center;
+    justify-content: center;
 }
 .main .perroGato h1{
     text-align: center;
@@ -241,8 +240,11 @@ img{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-
 }
+.mainPaseos .perroGato h2 {
+    color: #000000;
+}
+
 table {
     background-color: #304353;
     width: 100%;
@@ -474,12 +476,14 @@ button:hover{
         flex-direction: column;
         flex-wrap: nowrap;
         width: 40%;
+        background: linear-gradient(to top, #E0DDAA, #203239 );
     }
     .main .mascotas .porquePaseo{
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 40%;
+        background: linear-gradient(to top, #E0DDAA, #203239 );
     }
     .main .mascotas>div img{
         width: 98%;
@@ -536,6 +540,9 @@ button:hover{
         font-size: 9px;
     }
     /*--------main mascotas-----------------------*/
+    .main .nosotros{
+        padding-top: 0px;
+    }
     .main .mascotas{
         display: flex;
         flex-direction: column;   
@@ -637,16 +644,12 @@ button:hover{
     }
     /*------menu mobile----*/
     .menu ul li {
-        font-size: 6px;
+        font-size: 5px;
     }
 }
 @media (max-width: 360px) {
     body{
         font-size: 8px;
-    }
-    /*------menu mobile----*/
-    .menu ul li {
-        font-size: 5px;
     }
     /*--------main mascotas-----*/
     .main .mascotas div{
