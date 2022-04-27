@@ -7,16 +7,20 @@
     border: none;
     outline: none;
 }
-body{
+
+body {
     font-size: 16px;
 }
+
 @font-face {
     font-family: "mali";
     src: url(../fonts/Mali-Bold.ttf);
 }
-h1{
+
+h1 {
     text-align: center;
 }
+
 h2 {
     text-align: center;
     margin: 1em;
@@ -25,19 +29,21 @@ h2 {
 h3 {
     text-align: center;
 }
-img{
+
+img {
     border-radius: 1em;
-    border:solid 0.2em #203239;
+    border: solid 0.2em #203239;
+    width: 90%;
 }
 
 
 /*---header/nav---*/
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto ; 
-    font-size: 1em;   
+    grid-template-rows: auto;
+    font-size: 1em;
 }
 
 .header {
@@ -52,17 +58,18 @@ img{
 .header a img {
     width: 5em;
 }
+
 .header a img:hover {
-    transform:scale(1.1)
+    transform: scale(1.1)
 }
 
-.header nav ul {
+/* .header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-}
+} */
 
-.header nav ul li a {
+.header nav div ul li a {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -72,13 +79,30 @@ img{
     text-shadow: 2px 2px 2px rgb(27, 27, 27);
     font-family: "mali";
     font-size: 2em;
-    margin: 1em;
+    margin: 0em;
+    background-color: #203239;
 }
-.header nav ul li a:hover{
-    font-size: 2.5em;
+
+.header nav ul li a:hover {
     color: #E0DDAA;
 }
 
+.buttonBar {
+    font-family: "mali";
+    text-transform: uppercase;
+}
+
+.navUl {
+    background-color: #203239;
+}
+
+.ulNav {
+    margin-left: 25em;
+}
+
+#iconoMenu {
+    color: #f0c464;
+}
 
 
 /*-----------Main-----------*/
@@ -115,8 +139,9 @@ img{
     text-decoration: none;
     color: #f0c464;
 }
-.main .nosotros a:hover{
-    font-size: 1.3em ;
+
+.main .nosotros a:hover {
+    font-size: 1.3em;
 }
 
 .main .nosotros div {
@@ -127,26 +152,29 @@ img{
     padding-top: 4em;
 }
 
-.main .mascotas .mascotaFeliz{
+.main .mascotas .mascotaFeliz {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(to right, #3d4d5a, #E0DDAA);
 }
-.main .mascotas .mascotaFeliz:hover{
-    transform:scale(1.05);
+
+.main .mascotas .mascotaFeliz:hover {
+    transform: scale(1.05);
     background: #f0c464;
 }
-.main .mascotas .porquePaseo{
+
+.main .mascotas .porquePaseo {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to left, #304353, #E0DDAA );
+    background: linear-gradient(to left, #304353, #E0DDAA);
 }
-.main .mascotas .porquePaseo:hover{
-    transform:scale(1.05);
+
+.main .mascotas .porquePaseo:hover {
+    transform: scale(1.05);
     background: #f0c464;
 }
 
@@ -158,7 +186,8 @@ img{
     border: #203239 0.2em solid;
     border-radius: 1em;
 }
-.main .mascotas .mascotaFeliz div{
+
+.main .mascotas .mascotaFeliz div {
     margin: 0.4em;
 }
 
@@ -169,7 +198,8 @@ img{
     border: #203239 0.2em solid;
     border-radius: 1em;
 }
-.main .mascotas .porquePaseo div{
+
+.main .mascotas .porquePaseo div {
     margin: 0.4em;
 }
 
@@ -184,7 +214,8 @@ img{
     height: 60vh;
     border-radius: 0.2em;
 }
-#inframeLink{
+
+#inframeLink {
     display: none;
 }
 
@@ -200,7 +231,8 @@ img{
     text-align: center;
     justify-content: center;
 }
-.main .perroGato h1{
+
+.main .perroGato h1 {
     text-align: center;
     color: #000000;
 }
@@ -219,13 +251,14 @@ img{
     margin: 0.2em;
     width: 30%;
     height: 49%;
-    background: linear-gradient(to bottom, #304353, #E0DDAA );
+    background: linear-gradient(to bottom, #304353, #E0DDAA);
     border-radius: 0.4em;
     padding: 0.3em;
-    border:solid 0.2em #203239;
+    border: solid 0.2em #203239;
 }
-.main .razas div:hover{
-    transform:scale(1.1);
+
+.main .razas div:hover {
+    transform: scale(1.1);
     background: #f0c464;
 }
 
@@ -241,6 +274,7 @@ img{
     flex-wrap: nowrap;
     flex-direction: column;
 }
+
 .mainPaseos .perroGato h2 {
     color: #000000;
 }
@@ -252,7 +286,8 @@ table {
     border-radius: 0.3em;
 }
 
-th, td {
+th,
+td {
     width: 25%;
     text-align: center;
     vertical-align: center;
@@ -263,16 +298,27 @@ th, td {
 
 .galeria {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "img1 img2 img3"
-        "img4 img5 img6" 
+        "img4 img5 img6"
         "img7 img8 img9";
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr); 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
 }
-.galeria img:hover{
+
+.divCarousel {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+    margin-left: 9em;
+}
+
+/* .galeria img:hover{
     transform:scale(1.1)
 }
 .img1{
@@ -319,7 +365,7 @@ th, td {
     grid-area: img9;
     width: 26em;
     margin: 0.6em;
-}
+} */
 /* .galeria {
     display: flex;
     justify-content: space-between;
@@ -343,16 +389,17 @@ th, td {
 
 /*-----contacto----*/
 
-.formulario h1{
-    font-size: 16px;  
-    text-align: left; 
-    padding-bottom: 16px; 
+.formulario h1 {
+    font-size: 16px;
+    text-align: left;
+    padding-bottom: 16px;
     color: black;
 }
-.formulario h4{
-    font-size: 16px; 
+
+.formulario h4 {
+    font-size: 16px;
     padding-bottom: 16px;
-    color: #000000;   
+    color: #000000;
 }
 
 .formulario {
@@ -362,7 +409,7 @@ th, td {
     border-radius: 0.5em;
     padding-top: 2em;
     padding-bottom: 1.4em;
-    background: radial-gradient(  #304353,#2c3b47 );
+    background: radial-gradient(#304353, #2c3b47);
     padding-left: 2em;
 }
 
@@ -376,38 +423,41 @@ input {
     background-color: #E0DDAA;
     padding-left: 2em;
 }
+
 textarea {
-    background-color: #E0DDAA; 
-    width: 80%; 
-    height: 9.3em; 
-    border-radius: 0.8em;  
-    margin-top: 0.3em;  
+    background-color: #E0DDAA;
+    width: 80%;
+    height: 9.3em;
+    border-radius: 0.8em;
+    margin-top: 0.3em;
     padding-left: 0.3em;
-    margin-bottom: 1.4em; 
+    margin-bottom: 1.4em;
     padding-top: 1em;
 }
-label{
-    display: block; 
-    float: center;  
+
+label {
+    display: block;
+    float: center;
 }
-button{
-    height: 3em; 
+
+.button {
+    height: 3em;
     padding-left: 0.3em;
-    padding-right: 0.3em;   
-    margin-bottom: 1.4em; 
-    margin-top: 0.3em;   
+    padding-right: 0.3em;
+    margin-bottom: 1.4em;
+    margin-top: 0.3em;
     text-transform: uppercase;
-    background-color: #f0c464; 
-    border-color: #f0c464; 
-    border-style: solid; 
-    border-radius: 0.8em;  
-    width: 80%;   
+    background-color: #f0c464;
+    border-color: #f0c464;
+    border-style: solid;
+    border-radius: 0.8em;
+    width: 80%;
     cursor: pointer;
     font-family: "mali";
 }
-button:hover{
-    transform:scale(1.1)
 
+button:hover {
+    transform: scale(1.1)
 }
 
 /*---footer---*/
@@ -426,8 +476,9 @@ button:hover{
     width: 5.6em;
     padding: 1em;
 }
-.footer .img:hover{
-    transform:scale(1.1)
+
+.footer .img:hover {
+    transform: scale(1.1)
 }
 
 .footer div ul li a {
@@ -437,8 +488,8 @@ button:hover{
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     font-size: 1.2em;
 }
-.footer div ul li a:hover{
-    font-size: 1.4em;
+
+.footer div ul li a:hover {
     color: #E0DDAA;
 }
 
@@ -446,51 +497,81 @@ button:hover{
     width: 3.1em;
     padding: 0.4sem;
 }
-.footer .icons img:hover{
-    transform:scale(1.1)
+
+.footer .icons img:hover {
+    transform: scale(1.1)
 }
 
 /*-----------------------------------Media queries----------------------------*/
 @media (max-width: 1310px) {
+
     /*-----Paseos------*/
-    .img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9{
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8,
+    .img9 {
         width: 20em;
         margin: 0.6em;
     }
 }
+
+@media (max-width: 1240px) {
+    .ulNav {
+        margin-left: 9em;
+    }
+
+}
+
+
 @media (max-width: 1080px) {
+
     /*------menu mobile---------------------*/
     .menu ul li {
         font-size: 11px;
     }
+
+    .ulNav {
+        margin-left: 6em;
+    }
+
     /*--------main mascotas------------------*/
-    .main .mascotas{
+    .main .mascotas {
         display: flex;
-        flex-direction: row; 
-        flex-wrap: nowrap; 
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-evenly;  
+        justify-content: space-evenly;
     }
-    .main .mascotas .mascotaFeliz{
+
+    .main .mascotas .mascotaFeliz {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 40%;
-        background: linear-gradient(to top, #E0DDAA, #203239 );
+        background: linear-gradient(to top, #E0DDAA, #203239);
     }
-    .main .mascotas .porquePaseo{
+
+    .main .mascotas .porquePaseo {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: 40%;
-        background: linear-gradient(to top, #E0DDAA, #203239 );
+        background: linear-gradient(to top, #E0DDAA, #203239);
     }
-    .main .mascotas>div img{
+
+    .main .mascotas>div img {
         width: 98%;
     }
-    #inframeLink{
+
+    #inframeLink {
         display: none;
     }
+
     /*----main perro y gatos------------------*/
 
     .main .razas div {
@@ -500,72 +581,93 @@ button:hover{
         background-color: #e0dc7f;
         border-radius: 0.6em;
         padding: 0.3em;
-        border:solid 0.2em #203239;
+        border: solid 0.2em #203239;
     }
-    
+
     .main .razas {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
+
     /*----------Paseos--------------------------*/
-    .galeria{
-        grid-template-areas: 
-            "img1 img2" 
-            "img3 img4" 
-            "img5 img6" 
-            "img7 img8" 
+    .galeria {
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
             "img9 .";
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
     }
+
     /*------Formulario contacto-------------------*/
-    .formulario{
-        width:80%
+    .formulario {
+        width: 80%
     }
-    .formulario h1{
+
+    .formulario h1 {
         font-size: 13px;
     }
-    .formulario h4{
-        font-size: 11px;   
+
+    .formulario h4 {
+        font-size: 11px;
     }
 }
+
+@media (max-width: 991px) {
+    nav div {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
 @media (max-width: 768px) {
-    body{
+    body {
         font-size: 12px;
     }
+
     /*------menu mobile---------------------------*/
     .menu ul li {
         font-size: 9px;
     }
+
     /*--------main mascotas-----------------------*/
-    .main .nosotros{
+    .main .nosotros {
         padding-top: 0px;
     }
-    .main .mascotas{
+
+    .main .mascotas {
         display: flex;
-        flex-direction: column;   
+        flex-direction: column;
     }
-    .main .mascotas .mascotaFeliz{
+
+    .main .mascotas .mascotaFeliz {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: auto;
     }
-    .main .mascotas .porquePaseo{
+
+    .main .mascotas .porquePaseo {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: auto;
-        }
-    #inframe  {
+    }
+
+    #inframe {
         display: none;
     }
-    #inframeLink{
+
+    #inframeLink {
         display: inline;
         color: #000000;
     }
+
     /*---------perro y gatos------*/
     .main .razas {
         display: flex;
@@ -573,47 +675,62 @@ button:hover{
         justify-content: space-between;
         align-items: center;
     }
+
     .main .razas div {
         height: auto;
         width: 60%;
     }
-    
+
     /*------Formulario contacto----*/
-    .formulario{
-        width:80%
+    .formulario {
+        width: 80%
     }
-    .formulario h1{
+
+    .formulario h1 {
         font-size: 11px;
     }
-    .formulario h4{
-        font-size: 11px;   
+
+    .formulario h4 {
+        font-size: 11px;
     }
 }
+
 @media (max-width: 560px) {
-    body{
+    body {
         font-size: 11px;
     }
+
     /*------menu mobile----*/
     .menu ul li {
-        font-size:7px;
+        font-size: 7px;
     }
+
     /*--------main mascotas-----*/
-    .main .mascotas div{
-        flex-direction: column;    
+    .main .mascotas div {
+        flex-direction: column;
     }
-    #inframe  {
+
+    #inframe {
         display: none;
     }
-    #inframeLink{
+
+    #inframeLink {
         display: inline;
         color: #000000;
     }
+
     /*---------perro y gatos------*/
     .main .razas div {
         width: 80%;
     }
+
     /*----------Paseos------*/
-    .galeria{
+    .divCarousel {
+        margin-bottom: 5em;
+        margin-left: 7em;
+    }
+
+    /* .galeria{
         grid-template-areas: 
             "img1"
             "img2" 
@@ -626,55 +743,67 @@ button:hover{
             "img9";
         grid-template-columns:1fr;
         grid-template-rows: repeat(9,1fr);
-    }
+    } */
     /*------Formulario contacto----*/
-    .formulario{
-        width:80%
+    .formulario {
+        width: 80%
     }
-    .formulario h1{
+
+    .formulario h1 {
         font-size: 11px;
     }
-    .formulario h4{
-        font-size: 11px;   
+
+    .formulario h4 {
+        font-size: 11px;
     }
 }
-@media (max-width:431px){
-    body{
+
+@media (max-width:431px) {
+    body {
         font-size: 9px;
     }
+
     /*------menu mobile----*/
     .menu ul li {
         font-size: 5px;
     }
 }
+
 @media (max-width: 360px) {
-    body{
+    body {
         font-size: 8px;
     }
+
     /*--------main mascotas-----*/
-    .main .mascotas div{
-        flex-direction: column;    
+    .main .mascotas div {
+        flex-direction: column;
     }
-    #inframe  {
+
+    #inframe {
         display: none;
     }
-    #inframeLink{
+
+    #inframeLink {
         display: inline;
         color: #000000;
     }
+
     /*----------Paseos------*/
 
-    .galeria img{
+    .galeria img {
         width: 20em;
     }
+
     /*------Formulario contacto----*/
-    .formulario{
-        width:80%
+    .formulario {
+        width: 80%
     }
-    .formulario h1{
+
+    .formulario h1 {
         font-size: 9px;
     }
-    .formulario h4{
-        font-size: 9px;   
+
+    .formulario h4 {
+        font-size: 9px;
     }
-}  
+}

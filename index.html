@@ -15,14 +15,40 @@
 <body>
     <div class="grid-container">
         <header class="header">
-            <a href="index.html"><img src="image/logo3.png" alt="icono"></a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="pages/perros.html">Perros</a></li>
-                    <li><a href="pages/gatos.html">Gatos</a> </li>
-                    <li><a href="pages/paseos.html">Paseos</a></li>
-                    <li><a href="pages/contacto.html"> Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg container-fluid">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="image/logo3.png" alt="icono">
+                    </a>
+                    <button class="navbar-toggler buttonBar" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" id="iconoMenu">menu</span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ulNav" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown">
+                                Mascotas
+                            </a>
+                            <ul class="dropdown-menu navUl" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="pages/perros.html">Perros</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="pages/gatos.html">Gatos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/paseos.html">Paseos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main class="main">
@@ -46,7 +72,7 @@
             </section>
             <section class="mascotas">
                 <div class="mascotaFeliz">
-                    <img src="image/perroygato.jpeg" alt="Mascotas">
+                    <img src="image/perroygato.jpeg" class="img-fluid" alt="Mascotas">
                     <div>
                         <h2>Que hace feliz a nuestras mascotas</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum veniam fuga! Commodi
@@ -73,7 +99,7 @@
                     </div>
                 </div>
                 <div class="porquePaseo">
-                    <img src="image/paseo2.webp" alt="Mascotas">
+                    <img src="image/paseo2.webp" class="img-fluid" alt="Mascotas">
                     <div>
                         <h2>Por que pasearlos</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum veniam fuga! Commodi
@@ -98,19 +124,6 @@
                             pariatur delectus quia architecto modi, dolorum magni quidem beatae in iusto, laboriosam
                             doloremque excepturi eligendi.</p>
                     </div>
-                </div>
-            </section>
-            <section class="paseos">
-                <div id="inframe">
-                    <h2>Zona de paseo</h2>
-                    <iframe width="40%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://maps.google.com/maps?width=100%25&amp;height=100&amp;hl=es&amp;q=herrera%20901%20+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                            href="https://www.gps.ie/car-satnav-gps/"></a></iframe>
-                </div>
-                <div id="inframeLink">
-                    <a href="https://www.gps.ie/car-satnav-gps/">
-                        <h2>Zona de Paseos</h2>
-                    </a>
                 </div>
             </section>
         </main>
