@@ -430,6 +430,15 @@ td {
 } */
 
 /*-----contacto----*/
+.mainContacto{
+    background-color: #E0DDAA;
+    font-family: "mali";
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .formulario h1 {
     font-size: 16px;
@@ -445,8 +454,6 @@ td {
 }
 
 .formulario {
-    width: 30em;
-    height: auto;
     margin: 1.4em;
     border-radius: 0.5em;
     padding-top: 2em;
@@ -456,7 +463,7 @@ td {
 }
 
 input {
-    width: 80%;
+    width: 90%;
     height: 2.5em;
     margin: 1em auto;
     border-radius: 0.8em;
@@ -468,7 +475,7 @@ input {
 
 textarea {
     background-color: #E0DDAA;
-    width: 80%;
+    width: 90%;
     height: 9.3em;
     border-radius: 0.8em;
     margin-top: 0.3em;
@@ -493,7 +500,7 @@ label {
     border-color: #f0c464;
     border-style: solid;
     border-radius: 0.8em;
-    width: 80%;
+    width: 90%;
     cursor: pointer;
     font-family: "mali";
 }
@@ -649,9 +656,9 @@ button:hover {
     }
 
     /*------Formulario contacto-------------------*/
-    .formulario {
+    /* .formulario {
         width: 80%
-    }
+    } */
 
     .formulario h1 {
         font-size: 13px;
@@ -731,9 +738,9 @@ button:hover {
     }
 
     /*------Formulario contacto----*/
-    .formulario {
+    /* .formulario {
         width: 80%
-    }
+    } */
 
     .formulario h1 {
         font-size: 11px;
@@ -790,9 +797,9 @@ button:hover {
         grid-template-rows: repeat(9,1fr);
     } */
     /*------Formulario contacto----*/
-    .formulario {
+    /* .formulario {
         width: 80%
-    }
+    } */
 
     .formulario h1 {
         font-size: 11px;
@@ -840,9 +847,9 @@ button:hover {
     }
 
     /*------Formulario contacto----*/
-    .formulario {
+    /* .formulario {
         width: 80%
-    }
+    } */
 
     .formulario h1 {
         font-size: 9px;
