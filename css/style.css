@@ -29,12 +29,15 @@ h2 {
 h3 {
     text-align: center;
 }
+h5{
+    text-align: center;
+}
 
-img {
+/* img {
     border-radius: 1em;
     border: solid 0.2em #203239;
     width: 90%;
-}
+} */
 
 
 /*---header/nav---*/
@@ -119,12 +122,11 @@ img {
 .main section {
     font-family: "mali";
     padding: 1em;
-    align-items: center;
 }
 
 .main .nosotros {
     background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
-    height: 30em;
+    height: 24em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +143,7 @@ img {
 }
 
 .main .nosotros a:hover {
-    font-size: 1.3em;
+    color: #E0DDAA;
 }
 
 .main .nosotros div {
@@ -151,20 +153,60 @@ img {
     justify-content: center;
     padding-top: 4em;
 }
-
-.main .mascotas .mascotaFeliz {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.portada{
+    border-bottom-right-radius: 2em;
+    background: linear-gradient(to left, #3d4d5a, #E0DDAA);
+}
+.portada2{
+    border-bottom-left-radius: 2em;
     background: linear-gradient(to right, #3d4d5a, #E0DDAA);
 }
+.buttonPortada{
+    text-decoration: none;
+    background-color: #f0c464;
+    text-transform: uppercase;
+    color: #203239;
+    height: 3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-bottom: 1.4em;
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    border-color: #f0c464;
+    border-style: solid;
+    border-radius: 0.8em;
+}
+.buttonPortada:hover{
+    color: #E0DDAA;
+}
+/* .main .mascotas .felicidad {
+    margin: 2em;
+    border-end-start-radius: 2em;
+    border: none;
+    background: linear-gradient(to right, #3d4d5a, #E0DDAA);
+}
+.felicidad div div img{
+    width: auto;
+    border-bottom-left-radius: 2em;
+    padding: 1em;
+}
+.main .mascotas .pQpaseos {
 
-.main .mascotas .mascotaFeliz:hover {
+    margin: 2em;
+    border-end-end-radius: 2em;
+    border: none;
+    background: linear-gradient(to left, #3d4d5a, #E0DDAA);
+}
+.pQpaseos div div img{
+    border-bottom-left-radius: 2em;
+    padding: 1em;
+} */
+
+/* .main .mascotas .mascotaFeliz:hover {
     transform: scale(1.05);
     background: #f0c464;
-}
-
+} */
+/* 
 .main .mascotas .porquePaseo {
     display: flex;
     flex-direction: column;
@@ -173,21 +215,12 @@ img {
     background: linear-gradient(to left, #304353, #E0DDAA);
 }
 
-.main .mascotas .porquePaseo:hover {
+/* .main .mascotas .porquePaseo:hover {
     transform: scale(1.05);
     background: #f0c464;
-}
+} */
 
-.main .mascotas .mascotaFeliz {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 2em;
-    border: #203239 0.2em solid;
-    border-radius: 1em;
-}
-
-.main .mascotas .mascotaFeliz div {
+/* .main .mascotas .mascotaFeliz div {
     margin: 0.4em;
 }
 
@@ -195,21 +228,20 @@ img {
     display: flex;
     flex-direction: row-reverse;
     margin: 2em;
-    border: #203239 0.2em solid;
     border-radius: 1em;
-}
+} */ 
 
-.main .mascotas .porquePaseo div {
+/* .main .mascotas .porquePaseo div {
     margin: 0.4em;
-}
+} */
 
-.main .mascotas>div img {
+/* .main .mascotas>div img {
     width: 37.5em;
     height: 18.75em;
     margin: 0.3em;
-}
+} */
 
-.main .paseos iframe {
+/* .main .paseos iframe {
     width: 100%;
     height: 60vh;
     border-radius: 0.2em;
@@ -217,7 +249,7 @@ img {
 
 #inframeLink {
     display: none;
-}
+} */
 
 /*--------Main perro y gato-------*/
 
@@ -244,7 +276,7 @@ img {
     align-items: center;
 }
 
-.main .razas div {
+/* .main .razas div {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -255,15 +287,32 @@ img {
     border-radius: 0.4em;
     padding: 0.3em;
     border: solid 0.2em #203239;
-}
+} */
 
-.main .razas div:hover {
+/* .main .razas div:hover {
     transform: scale(1.1);
     background: #f0c464;
+} */
+.cardPG{
+    background: linear-gradient(to bottom,  #E0DDAA, #304353);
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-end-end-radius: 1em;
+}
+.buttonRazas{
+    background-color: #f0c464;
+    color: #203239;
+    border: none;
+}
+.buttonRazas:hover {
+    background-color: #E0DDAA;
+    color: #203239;
+
 }
 
 .img {
     width: auto;
+    height: 20em;
 }
 
 /*------paseos-------*/
@@ -296,7 +345,7 @@ td {
     background-color: #E0DDAA;
 }
 
-.galeria {
+/* .galeria {
     display: grid;
     grid-template-areas:
         "img1 img2 img3"
@@ -306,16 +355,9 @@ td {
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-}
-
+} */
 .divCarousel {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5em;
-    margin-left: 9em;
+    padding: 4em;
 }
 
 /* .galeria img:hover{
@@ -498,7 +540,10 @@ button:hover {
     padding: 0.4sem;
 }
 
-.footer .icons img:hover {
+.logoFooter{
+    width: 5em;
+}
+.logoFooter:hover {
     transform: scale(1.1)
 }
 
@@ -540,7 +585,7 @@ button:hover {
     }
 
     /*--------main mascotas------------------*/
-    .main .mascotas {
+    /* .main .mascotas {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -570,11 +615,11 @@ button:hover {
 
     #inframeLink {
         display: none;
-    }
+    } */
 
     /*----main perro y gatos------------------*/
 
-    .main .razas div {
+    /* .main .razas div {
         display: flex;
         flex-direction: column;
         margin: 0.4em;
@@ -589,7 +634,7 @@ button:hover {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-    }
+    } */
 
     /*----------Paseos--------------------------*/
     .galeria {
@@ -636,10 +681,14 @@ button:hover {
     }
 
     /*--------main mascotas-----------------------*/
-    .main .nosotros {
-        padding-top: 0px;
+    .main .nosotros div{
+        padding-top: 0;
+        margin-top: 0;
     }
-
+    h2{
+        margin: 0.5em;
+    }
+    
     .main .mascotas {
         display: flex;
         flex-direction: column;
@@ -725,10 +774,6 @@ button:hover {
     }
 
     /*----------Paseos------*/
-    .divCarousel {
-        margin-bottom: 5em;
-        margin-left: 7em;
-    }
 
     /* .galeria{
         grid-template-areas: 
