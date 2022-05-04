@@ -1,0 +1,225 @@
+/*-----------------------------------Media queries----------------------------*/
+@media (max-width: 1310px) {
+
+    /*-----Paseos------*/
+    .img1,
+    .img2,
+    .img3,
+    .img4,
+    .img5,
+    .img6,
+    .img7,
+    .img8,
+    .img9 {
+        width: 20em;
+        margin: 0.6em;
+    }
+}
+
+@media (max-width: 1240px) {
+    .ulNav {
+        margin-left: 9em;
+    }
+
+}
+
+@media (max-width: 1080px) {
+
+    /*------menu mobile---------------------*/
+    .menu ul li {
+        font-size: 11px;
+    }
+
+    .ulNav {
+        margin-left: 6em;
+    }
+
+    /*----------Paseos--------------------------*/
+    .galeria {
+        grid-template-areas:
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "img9 .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    /*------Formulario contacto-------------------*/
+    .formulario {
+        h1 {
+            font-size: 13px;
+        }
+
+        h4 {
+            font-size: 11px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    nav div {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+    }
+
+    /*------menu mobile---------------------------*/
+    .menu ul li {
+        font-size: 9px;
+    }
+
+    /*--------main mascotas-----------------------*/
+    .main {
+        .nosotros {
+            div {
+                padding-top: 0;
+                margin-top: 0;
+            }
+
+            ;
+        }
+
+        .mascotas {
+            display: flex;
+            flex-direction: column;
+
+            .mascotasFeliz {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: auto;
+            }
+
+            .porquePaseo {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: auto;
+            }
+        }
+    }
+
+    h2 {
+        margin: 0.5em;
+    }
+
+    /*---------perro y gatos------*/
+    .main {
+        .razas {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                height: auto;
+                width: 60%;
+            }
+        }
+    }
+
+    /*------Formulario contacto----*/
+    .formulario {
+        h1 {
+            font-size: 11px;
+
+        }
+
+        h4 {
+            font-size: 11px;
+
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        font-size: 11px;
+    }
+
+    /*------menu mobile----*/
+    .menu {
+        ul {
+            li {
+                font-size: 7px;
+            }
+        }
+    }
+
+    /*--------main mascotas-----*/
+    .main {
+        .mascotas {
+            div {
+                flex-direction: column;
+            }
+        }
+    }
+
+    /*---------perro y gatos------*/
+    .main {
+        .razas {
+            div {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (max-width:431px) {
+    body {
+        font-size: 9px;
+    }
+
+    /*------menu mobile----*/
+    .menu {
+        ul {
+            li {
+                font-size: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 8px;
+    }
+
+    /*--------main mascotas-----*/
+    .main {
+        .mascotas {
+            div {
+                flex-direction: column;
+            }
+        }
+    }
+
+    /*----------Paseos------*/
+
+    .galeria {
+        img {
+            width: 20em;
+        }
+    }
+
+    /*------Formulario contacto----*/
+    .formulario {
+        h1 {
+            font-size: 9px;
+
+        }
+
+        h4 {
+            font-size: 9px;
+
+        }
+    }
+}

@@ -1,0 +1,37 @@
+/*-------------------footer-------------------*/
+.footer {
+    background-color: $background-colorNav;
+    padding: 1em;
+    font-family: "mali";
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        ul {
+            li {
+                a {
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: $colorButton;
+                    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+                    font-size: 1.2em;
+
+                    &:hover {
+                        color: $background-colormain;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logoFooter {
+    width: 4em;
+
+    &:hover {
+        transform: scale(1.1)
+    }
+}

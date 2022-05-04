@@ -1,0 +1,269 @@
+/*--------------Main----------*/
+.main {
+    background-color: $background-colormain;
+    font-family: "mali";
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    section {
+        font-family: "mali";
+        padding: 1em;
+    }
+
+    .nosotros {
+        background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
+        height: 24em;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        color: #ffffff;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding-top: 4em;
+
+            a {
+                font-family: "mali";
+                text-decoration: none;
+                color: $colorButton;
+
+                &:hover {
+                    color: $background-colormain;
+                }
+            }
+
+        }
+    }
+}
+
+.portada {
+    border-bottom-right-radius: 2em;
+    background: linear-gradient(to left, #3d4d5a, #E0DDAA);
+}
+
+.portada2 {
+    border-bottom-left-radius: 2em;
+    background: linear-gradient(to right, #3d4d5a, #E0DDAA);
+}
+
+.buttonPortada {
+    text-decoration: none;
+    background-color: $colorButton;
+    text-transform: uppercase;
+    color: $background-colorNav;
+    height: 3em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    margin-bottom: 1.4em;
+    margin-top: 0.3em;
+    text-transform: uppercase;
+    border-color: $colorButton;
+    border-style: solid;
+    border-radius: 0.8em;
+
+    &:hover {
+        color: $background-colormain;
+    }
+}
+
+/*--------Main perro y gato-------*/
+
+.main {
+    .perroGato {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #304353;
+        color: $background-colormain;
+        font-family: "mali";
+        padding: 0.5em;
+        text-align: center;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+    }
+
+    .razas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .cardPG {
+            background: linear-gradient(to bottom, #E0DDAA, #304353);
+            margin-top: 2em;
+            margin-bottom: 2em;
+            border-end-end-radius: 1em;
+
+            .img {
+                width: auto;
+                height: 20em;
+            }
+
+            div {
+                .buttonRazas {
+                    background-color: $colorButton;
+                    color: $background-colorNav;
+                    border: none;
+
+                    &:hover {
+                        background-color: $background-colormain;
+                        color: $background-colorNav;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*----------------paseos------------*/
+
+.mainPaseos {
+    background-color: $background-colormain;
+    font-family: "mali";
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    div {
+        .divCarousel {
+            padding: 4em;
+        }
+
+        div {
+            table {
+                background-color: #304353;
+                width: 100%;
+                border: 1px solid #11171d;
+                border-radius: 0.3em;
+
+                tr {
+                    th {
+                        width: 25%;
+                        text-align: center;
+                        vertical-align: center;
+                        border: 1px solid #182025;
+                        border-radius: 0.3em;
+                        background-color: $background-colormain;
+
+                    }
+
+                    td {
+                        width: 25%;
+                        text-align: center;
+                        vertical-align: center;
+                        border: 1px solid #182025;
+                        border-radius: 0.3em;
+                        background-color: $background-colormain;
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    .perroGato {
+        h2 {
+            color: #000000;
+        }
+    }
+}
+
+/*----------------contacto--------------*/
+
+.mainContacto {
+    background-color: $background-colormain;
+    font-family: "mali";
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .formulario {
+        margin: 1.4em;
+        border-radius: 0.5em;
+        padding-top: 2em;
+        padding-bottom: 1.4em;
+        background: radial-gradient(#304353, #2c3b47);
+        padding-left: 2em;
+
+        h1 {
+            font-size: 16px;
+            text-align: left;
+            padding-bottom: 16px;
+            color: black;
+
+        }
+
+        h4 {
+            font-size: 16px;
+            padding-bottom: 16px;
+            color: #000000;
+
+        }
+
+        form {
+            p {
+                label {
+                    display: block;
+                    float: center;
+                }
+
+                input {
+                    width: 90%;
+                    height: 2.5em;
+                    margin: 1em auto;
+                    border-radius: 0.8em;
+                    padding-top: 2em;
+                    padding-bottom: 1.4em;
+                    background-color: $background-colormain;
+                    padding-left: 2em;
+                }
+
+                textarea {
+                    background-color: $background-colormain;
+                    width: 90%;
+                    height: 9.3em;
+                    border-radius: 0.8em;
+                    margin-top: 0.3em;
+                    padding-left: 0.3em;
+                    margin-bottom: 1.4em;
+                    padding-top: 1em;
+                }
+
+                .button {
+                    height: 3em;
+                    padding-left: 0.3em;
+                    padding-right: 0.3em;
+                    margin-bottom: 1.4em;
+                    margin-top: 0.3em;
+                    text-transform: uppercase;
+                    background-color: $colorButton;
+                    border-color: $colorButton;
+                    border-style: solid;
+                    border-radius: 0.8em;
+                    width: 90%;
+                    cursor: pointer;
+                    font-family: "mali";
+
+                    &:hover {
+                        transform: scale(1.1)
+                    }
+                }
+
+            }
+        }
+    }
+}

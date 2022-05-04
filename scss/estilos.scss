@@ -1,4 +1,6 @@
-@import "pages/variables";
-@import "pages/base";
-@import "pages/component";
-@import "pages/layout";
+@import "base/reset";
+@import "base/variables";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
+@import "layout/mediaqueris"
