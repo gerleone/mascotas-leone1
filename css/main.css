@@ -16,17 +16,7 @@ body {
   font-family: "mali";
   src: url(../fonts/Mali-Bold.ttf); }
 
-h1 {
-  text-align: center; }
-
-h2 {
-  text-align: center;
-  margin: 1em; }
-
-h3 {
-  text-align: center; }
-
-h5 {
+h1, h2, h3, h4, h5 {
   text-align: center; }
 
 /*------Header/nav-------*/
@@ -67,7 +57,7 @@ h5 {
   .header .navUl {
     background-color: #203239; }
   .header .ulNav {
-    margin-left: 25em; }
+    margin-left: 2em; }
   .header #iconoMenu {
     color: #f0c464; }
 
@@ -212,17 +202,19 @@ h5 {
     background: radial-gradient(#304353, #2c3b47);
     padding-left: 2em; }
     .mainContacto .formulario h1 {
-      font-size: 16px;
-      text-align: left;
+      font-size: 1.4em;
+      text-align: center;
       padding-bottom: 16px;
       color: black; }
     .mainContacto .formulario h4 {
-      font-size: 16px;
+      font-size: 1.4em;
       padding-bottom: 16px;
       color: #000000; }
     .mainContacto .formulario form p label {
       display: block;
-      float: center; }
+      float: center;
+      font-size: 1.4em;
+      color: #11171d; }
     .mainContacto .formulario form p input {
       width: 90%;
       height: 2.5em;
@@ -296,16 +288,10 @@ h5 {
     width: 20em;
     margin: 0.6em; } }
 
-@media (max-width: 1240px) {
-  .ulNav {
-    margin-left: 9em; } }
-
 @media (max-width: 1080px) {
   /*------menu mobile---------------------*/
   .menu ul li {
     font-size: 11px; }
-  .ulNav {
-    margin-left: 6em; }
   /*----------Paseos--------------------------*/
   .galeria {
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 .";
