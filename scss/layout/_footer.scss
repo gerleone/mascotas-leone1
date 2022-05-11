@@ -1,6 +1,6 @@
 /*-------------------footer-------------------*/
 .footer {
-    background-color: $background-colorNav;
+    background-color: $azul;
     padding: 1em;
     font-family: "mali";
     font-size: 1.2em;
@@ -14,12 +14,12 @@
                 a {
                     text-decoration: none;
                     font-weight: bold;
-                    color: $colorButton;
+                    color: $naranja;
                     text-shadow: 2px 2px 2px rgb(0, 0, 0);
                     font-size: 1.2em;
 
                     &:hover {
-                        color: $background-colormain;
+                        color: $beige;
 
                     }
                 }

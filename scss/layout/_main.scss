@@ -1,6 +1,6 @@
 /*--------------Main----------*/
 .main {
-    background-color: $background-colormain;
+    background-color: $beige;
     font-family: "mali";
     display: flex;
     flex-wrap: nowrap;
@@ -32,10 +32,10 @@
             a {
                 font-family: "mali";
                 text-decoration: none;
-                color: $colorButton;
+                color: $beige;
 
                 &:hover {
-                    color: $background-colormain;
+                    color: $beige;
                 }
             }
 
@@ -45,31 +45,31 @@
 
 .portada {
     border-bottom-right-radius: 2em;
-    background: linear-gradient(to left, #3d4d5a, #E0DDAA);
+    background: linear-gradient(to left, #3d4d5a, $beige);
 }
 
 .portada2 {
     border-bottom-left-radius: 2em;
-    background: linear-gradient(to right, #3d4d5a, #E0DDAA);
+    background: linear-gradient(to right, #3d4d5a, $beige);
 }
 
 .buttonPortada {
     text-decoration: none;
-    background-color: $colorButton;
+    background-color: $beige;
     text-transform: uppercase;
-    color: $background-colorNav;
+    color: $azul;
     height: 3em;
     padding-left: 0.3em;
     padding-right: 0.3em;
     margin-bottom: 1.4em;
     margin-top: 0.3em;
     text-transform: uppercase;
-    border-color: $colorButton;
+    border-color: $beige;
     border-style: solid;
     border-radius: 0.8em;
 
     &:hover {
-        color: $background-colormain;
+        color: $beige;
     }
 }
 
@@ -79,8 +79,8 @@
     .perroGato {
         display: flex;
         flex-wrap: wrap;
-        background-color: #304353;
-        color: $background-colormain;
+        background-color: $azulclaro;
+        color: $beige;
         font-family: "mali";
         padding: 0.5em;
         text-align: center;
@@ -88,7 +88,7 @@
 
         h1 {
             text-align: center;
-            color: #000000;
+            color: $negro;
         }
     }
 
@@ -99,7 +99,7 @@
         align-items: center;
 
         .cardPG {
-            background: linear-gradient(to bottom, #E0DDAA, #304353);
+            background: linear-gradient(to bottom, $beige, $azulclaro);
             margin-top: 2em;
             margin-bottom: 2em;
             border-end-end-radius: 1em;
@@ -111,13 +111,13 @@
 
             div {
                 .buttonRazas {
-                    background-color: $colorButton;
-                    color: $background-colorNav;
+                    background-color: $beige;
+                    color: $azul;
                     border: none;
 
                     &:hover {
-                        background-color: $background-colormain;
-                        color: $background-colorNav;
+                        background-color: $beige;
+                        color: $azul;
                     }
                 }
             }
@@ -129,20 +129,35 @@
 /*----------------paseos------------*/
 
 .mainPaseos {
-    background-color: $background-colormain;
+    background-color: $beige;
     font-family: "mali";
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 
     div {
+        .perroGato {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $azulclaro;
+            color: $beige;
+            font-family: "mali";
+            padding: 0.5em;
+            text-align: center;
+            justify-content: center;
+    
+            h1 {
+                text-align: center;
+                color: $negro;
+            }
+        }
         .divCarousel {
             padding: 4em;
         }
 
         div {
             table {
-                background-color: #304353;
+                background-color: $azulclaro;
                 width: 100%;
                 border: 1px solid #11171d;
                 border-radius: 0.3em;
@@ -154,7 +169,7 @@
                         vertical-align: center;
                         border: 1px solid #182025;
                         border-radius: 0.3em;
-                        background-color: $background-colormain;
+                        background-color: $beige;
 
                     }
 
@@ -164,7 +179,7 @@
                         vertical-align: center;
                         border: 1px solid #182025;
                         border-radius: 0.3em;
-                        background-color: $background-colormain;
+                        background-color: $beige;
 
                     }
 
@@ -175,7 +190,7 @@
 
     .perroGato {
         h2 {
-            color: #000000;
+            color: $negro;
         }
     }
 }
@@ -183,7 +198,7 @@
 /*----------------contacto--------------*/
 
 .mainContacto {
-    background-color: $background-colormain;
+    background-color: $beige;
     font-family: "mali";
     display: flex;
     flex-wrap: nowrap;
@@ -196,21 +211,21 @@
         border-radius: 0.5em;
         padding-top: 2em;
         padding-bottom: 1.4em;
-        background: radial-gradient(#304353, #2c3b47);
+        background: radial-gradient($azulclaro, #2c3b47);
         padding-left: 2em;
 
         h1 {
             font-size: 1.4em;
             text-align: center;
             padding-bottom: 16px;
-            color: black;
+            color: $negro;
 
         }
 
         h4 {
             font-size: 1.4em;
             padding-bottom: 16px;
-            color: #000000;
+            color: $negro;
 
         }
 
@@ -230,12 +245,12 @@
                     border-radius: 0.8em;
                     padding-top: 2em;
                     padding-bottom: 1.4em;
-                    background-color: $background-colormain;
+                    background-color: $beige;
                     padding-left: 2em;
                 }
 
                 textarea {
-                    background-color: $background-colormain;
+                    background-color: $beige;
                     width: 90%;
                     height: 9.3em;
                     border-radius: 0.8em;
@@ -252,8 +267,8 @@
                     margin-bottom: 1.4em;
                     margin-top: 0.3em;
                     text-transform: uppercase;
-                    background-color: $colorButton;
-                    border-color: $colorButton;
+                    background-color: $beige;
+                    border-color: $beige;
                     border-style: solid;
                     border-radius: 0.8em;
                     width: 90%;

@@ -19,6 +19,8 @@ body {
 h1, h2, h3, h4, h5 {
   text-align: center; }
 
+/*-----------Variables---------*/
+/*------------mapa------------*/
 /*------Header/nav-------*/
 .grid-container {
   display: grid;
@@ -90,7 +92,7 @@ h1, h2, h3, h4, h5 {
       .main .nosotros div a {
         font-family: "mali";
         text-decoration: none;
-        color: #f0c464; }
+        color: #E0DDAA; }
         .main .nosotros div a:hover {
           color: #E0DDAA; }
 
@@ -104,7 +106,7 @@ h1, h2, h3, h4, h5 {
 
 .buttonPortada {
   text-decoration: none;
-  background-color: #f0c464;
+  background-color: #E0DDAA;
   text-transform: uppercase;
   color: #203239;
   height: 3em;
@@ -113,7 +115,7 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1.4em;
   margin-top: 0.3em;
   text-transform: uppercase;
-  border-color: #f0c464;
+  border-color: #E0DDAA;
   border-style: solid;
   border-radius: 0.8em; }
   .buttonPortada:hover {
@@ -131,7 +133,7 @@ h1, h2, h3, h4, h5 {
   justify-content: center; }
   .main .perroGato h1 {
     text-align: center;
-    color: #000000; }
+    color: black; }
 
 .main .razas {
   display: flex;
@@ -147,7 +149,7 @@ h1, h2, h3, h4, h5 {
       width: auto;
       height: 20em; }
     .main .razas .cardPG div .buttonRazas {
-      background-color: #f0c464;
+      background-color: #E0DDAA;
       color: #203239;
       border: none; }
       .main .razas .cardPG div .buttonRazas:hover {
@@ -161,6 +163,18 @@ h1, h2, h3, h4, h5 {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column; }
+  .mainPaseos div .perroGato {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #304353;
+    color: #E0DDAA;
+    font-family: "mali";
+    padding: 0.5em;
+    text-align: center;
+    justify-content: center; }
+    .mainPaseos div .perroGato h1 {
+      text-align: center;
+      color: black; }
   .mainPaseos div .divCarousel {
     padding: 4em; }
   .mainPaseos div div table {
@@ -183,7 +197,7 @@ h1, h2, h3, h4, h5 {
       border-radius: 0.3em;
       background-color: #E0DDAA; }
   .mainPaseos .perroGato h2 {
-    color: #000000; }
+    color: black; }
 
 /*----------------contacto--------------*/
 .mainContacto {
@@ -209,7 +223,7 @@ h1, h2, h3, h4, h5 {
     .mainContacto .formulario h4 {
       font-size: 1.4em;
       padding-bottom: 16px;
-      color: #000000; }
+      color: black; }
     .mainContacto .formulario form p label {
       display: block;
       float: center;
@@ -240,8 +254,8 @@ h1, h2, h3, h4, h5 {
       margin-bottom: 1.4em;
       margin-top: 0.3em;
       text-transform: uppercase;
-      background-color: #f0c464;
-      border-color: #f0c464;
+      background-color: #E0DDAA;
+      border-color: #E0DDAA;
       border-style: solid;
       border-radius: 0.8em;
       width: 90%;
