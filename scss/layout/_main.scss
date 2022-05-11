@@ -32,7 +32,7 @@
             a {
                 font-family: "mali";
                 text-decoration: none;
-                color: $beige;
+                color: $naranja;
 
                 &:hover {
                     color: $beige;
@@ -55,7 +55,7 @@
 
 .buttonPortada {
     text-decoration: none;
-    background-color: $beige;
+    background-color: $naranja;
     text-transform: uppercase;
     color: $azul;
     height: 3em;
@@ -64,12 +64,12 @@
     margin-bottom: 1.4em;
     margin-top: 0.3em;
     text-transform: uppercase;
-    border-color: $beige;
+    border-color: $naranja;
     border-style: solid;
     border-radius: 0.8em;
 
     &:hover {
-        color: $beige;
+        color: $naranja;
     }
 }
 
@@ -111,7 +111,7 @@
 
             div {
                 .buttonRazas {
-                    background-color: $beige;
+                    background-color: $naranja;
                     color: $azul;
                     border: none;
 
@@ -267,8 +267,8 @@
                     margin-bottom: 1.4em;
                     margin-top: 0.3em;
                     text-transform: uppercase;
-                    background-color: $beige;
-                    border-color: $beige;
+                    background-color: $naranja;
+                    border-color: $naranja;
                     border-style: solid;
                     border-radius: 0.8em;
                     width: 90%;

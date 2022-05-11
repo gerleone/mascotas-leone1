@@ -1,4 +1,3 @@
-
 /*-----------Variables---------*/
 $azul: #203239;
 $azulclaro: #304353;
@@ -8,3 +7,24 @@ $negro: black;
 
 /*------------mapa------------*/
 
+$colores: (
+    $azul: #203239,
+    $azulclaro: #304353,
+    $beige: #E0DDAA,
+    $naranja: #f0c464,
+    $negro: black,
+);
+/*------map-get use en header y nav a hover-------*/
+
+
+/*--------@estend en .footer-------*/
+
+/*---------@mixin agregado en las a de header-------*/
+@mixin color($backcolor, $color) {
+    background-color: $backcolor;
+    color: $color;
+}
+
+.color {
+    @include color($azul, $naranja)
+}
