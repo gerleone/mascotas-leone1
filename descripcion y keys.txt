@@ -1,0 +1,10 @@
+sume los meta description y keywords a todas mis paginas con una breve descripcion 
+description:
+index: Nos dedicamos a la felicidad de nuestras mascotas, traela tuya a pasear con nosotros
+perros y gatos: Conoce mas sobre la raza de tu gato/perro
+paseos: tu mascota va a ser feliz con nosotros, conoce nuestro exclusivo metodos de paseos
+contacto:contactanos para traer a tu mascota ella te lo va a agredecer
+keywords:mascotas, animales, paseos, perros, gatos, parque, felicidad, amistad
+encabezados: ya los tenia segun el nombre de la pagina por ende no los actualice
+
+agregue mixin extend y map en la pagina de scss variables
