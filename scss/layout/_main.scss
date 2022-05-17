@@ -13,7 +13,7 @@
 
     .nosotros {
         background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
-        height: 20em;
+        height: 22em;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -43,6 +43,10 @@
     }
 }
 
+.botonAlineado{
+    text-align: center;
+}
+
 .portada {
     border-bottom-right-radius: 2em;
     background: linear-gradient(to left, #3d4d5a, $beige);
@@ -55,12 +59,13 @@
 
 .buttonPortada {
     background-color: $naranja;
-                    color: $azul;
-                    border: none;
+    color: $azul;
+    border: none;
 
-                    &:hover {
-                        background-color: $beige;
-                        color: $azul;
+
+    &:hover {
+        background-color: $beige;
+        color: $azul;
     }
 }
 
@@ -105,6 +110,7 @@
                     background-color: $naranja;
                     color: $azul;
                     border: none;
+                    text-align: center;
 
                     &:hover {
                         background-color: $beige;
@@ -136,12 +142,13 @@
             padding: 0.5em;
             text-align: center;
             justify-content: center;
-    
+
             h2 {
                 text-align: center;
                 color: $negro;
             }
         }
+
         .divCarousel {
             padding-left: 10.7em;
             padding-bottom: 2em;
