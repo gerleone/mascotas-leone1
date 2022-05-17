@@ -16,7 +16,7 @@ body {
   font-family: "mali";
   src: url(../fonts/Mali-Bold.ttf); }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, p {
   text-align: center;
   margin-top: 0.5em; }
 
@@ -166,7 +166,8 @@ h1, h2, h3, h4, h5 {
       text-align: center;
       color: black; }
   .mainPaseos div .divCarousel {
-    padding: 4em;
+    padding-left: 10.7em;
+    padding-bottom: 2em;
     width: 85%;
     justify-content: center; }
   .mainPaseos div div table {
