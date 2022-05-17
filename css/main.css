@@ -17,7 +17,8 @@ body {
   src: url(../fonts/Mali-Bold.ttf); }
 
 h1, h2, h3, h4, h5 {
-  text-align: center; }
+  text-align: center;
+  margin-top: 0.5em; }
 
 /*-----------Variables---------*/
 /*------------mapa------------*/
@@ -37,14 +38,13 @@ h1, h2, h3, h4, h5 {
   justify-content: space-between;
   align-items: flex-end; }
   .header nav div a img, .header--footer nav div a img {
-    width: 5em; }
+    width: 8em; }
     .header nav div a img:hover, .header--footer nav div a img:hover {
       transform: scale(1.1); }
   .header nav div ul li a, .header--footer nav div ul li a {
     text-decoration: none;
-    font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none;
+    font-weight: bold;
     font-weight: bold;
     text-shadow: 2px 2px 2px #1b1b1b;
     font-family: "mali";
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
     padding: 1em; }
   .main .nosotros {
     background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
-    height: 24em;
+    height: 20em;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,21 +104,12 @@ h1, h2, h3, h4, h5 {
   background: linear-gradient(to right, #3d4d5a, #E0DDAA); }
 
 .buttonPortada {
-  text-decoration: none;
   background-color: #f0c464;
-  text-transform: uppercase;
   color: #203239;
-  height: 3em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  margin-bottom: 1.4em;
-  margin-top: 0.3em;
-  text-transform: uppercase;
-  border-color: #f0c464;
-  border-style: solid;
-  border-radius: 0.8em; }
+  border: none; }
   .buttonPortada:hover {
-    color: #f0c464; }
+    background-color: #E0DDAA;
+    color: #203239; }
 
 /*--------Main perro y gato-------*/
 .main .perroGato {
@@ -155,7 +146,7 @@ h1, h2, h3, h4, h5 {
         background-color: #E0DDAA;
         color: #203239; }
 
-/*----------------paseos------------*/
+/*----------------Guarderia---------------*/
 .mainPaseos {
   background-color: #E0DDAA;
   font-family: "mali";
@@ -171,25 +162,27 @@ h1, h2, h3, h4, h5 {
     padding: 0.5em;
     text-align: center;
     justify-content: center; }
-    .mainPaseos div .perroGato h1 {
+    .mainPaseos div .perroGato h2 {
       text-align: center;
       color: black; }
   .mainPaseos div .divCarousel {
-    padding: 4em; }
+    padding: 4em;
+    width: 85%;
+    justify-content: center; }
   .mainPaseos div div table {
     background-color: #304353;
     width: 100%;
     border: 1px solid #11171d;
     border-radius: 0.3em; }
     .mainPaseos div div table tr th {
-      width: 25%;
+      width: auto;
       text-align: center;
       vertical-align: center;
       border: 1px solid #182025;
       border-radius: 0.3em;
       background-color: #E0DDAA; }
     .mainPaseos div div table tr td {
-      width: 25%;
+      width: auto;
       text-align: center;
       vertical-align: center;
       border: 1px solid #182025;
@@ -278,7 +271,7 @@ h1, h2, h3, h4, h5 {
       color: #E0DDAA; }
 
 .logoFooter {
-  width: 4em; }
+  width: 3.5em; }
   .logoFooter:hover {
     transform: scale(1.1); }
 

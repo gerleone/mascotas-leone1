@@ -11,7 +11,7 @@
         div {
             a {
                 img {
-                    width: 5em;
+                    width: 8em;
 
                     &:hover {
                         transform: scale(1.1)
@@ -23,16 +23,13 @@
                 li {
                     a {
                         text-decoration: none;
-                        font-weight: bold;
                         text-transform: uppercase;
-                        text-decoration: none;
                         font-weight: bold;
-                        // color: $naranja;
+                        font-weight: bold;
                         text-shadow: 2px 2px 2px rgb(27, 27, 27);
                         font-family: "mali";
                         font-size: 2em;
                         margin: 0em;
-                        // background-color: $azul;
 
                         &:hover {
                             color: map-get($colores, $beige );

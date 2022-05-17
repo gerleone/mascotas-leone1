@@ -13,7 +13,7 @@
 
     .nosotros {
         background: linear-gradient(rgba(59, 12, 12, 0.068), rgba(0, 0, 0, 0.055)), url("../image/parallax2.jpeg");
-        height: 24em;
+        height: 20em;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -54,22 +54,13 @@
 }
 
 .buttonPortada {
-    text-decoration: none;
     background-color: $naranja;
-    text-transform: uppercase;
-    color: $azul;
-    height: 3em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    margin-bottom: 1.4em;
-    margin-top: 0.3em;
-    text-transform: uppercase;
-    border-color: $naranja;
-    border-style: solid;
-    border-radius: 0.8em;
+                    color: $azul;
+                    border: none;
 
-    &:hover {
-        color: $naranja;
+                    &:hover {
+                        background-color: $beige;
+                        color: $azul;
     }
 }
 
@@ -126,7 +117,7 @@
 }
 
 
-/*----------------paseos------------*/
+/*----------------Guarderia---------------*/
 
 .mainPaseos {
     background-color: $beige;
@@ -146,13 +137,15 @@
             text-align: center;
             justify-content: center;
     
-            h1 {
+            h2 {
                 text-align: center;
                 color: $negro;
             }
         }
         .divCarousel {
             padding: 4em;
+            width: 85%;
+            justify-content: center;
         }
 
         div {
@@ -164,7 +157,7 @@
 
                 tr {
                     th {
-                        width: 25%;
+                        width: auto;
                         text-align: center;
                         vertical-align: center;
                         border: 1px solid #182025;
@@ -174,7 +167,7 @@
                     }
 
                     td {
-                        width: 25%;
+                        width: auto;
                         text-align: center;
                         vertical-align: center;
                         border: 1px solid #182025;
