@@ -59,8 +59,9 @@ h1, h2, h3, h4, h5, p {
     background-color: #203239; }
   .header .ulNav, .header--footer .ulNav {
     margin-left: 2em; }
-  .header #iconoMenu, .header--footer #iconoMenu {
-    color: #f0c464; }
+  .header .iconoMenu, .header--footer .iconoMenu {
+    color: #f0c464 !important;
+    text-decoration: none; }
 
 /*--------------Main----------*/
 .main {

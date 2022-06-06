@@ -53,7 +53,8 @@
         margin-left: 2em;
     }
 
-    #iconoMenu {
-        color: #f0c464;
+    .iconoMenu {
+        color: #f0c464 !important;
+        text-decoration:none
     }
 }
